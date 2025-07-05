@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaArrowRight, FaEnvelope, FaDownload } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 // import Footer from "../components/Footer";
-import profileImg from "../assets/profile.jpg"; 
+// import profileImg from "../assets/profile.jpg"; 
 
 export default function Home() {
   return (
@@ -13,11 +13,11 @@ export default function Home() {
       <section className="min-h-[100vh] flex items-center justify-center bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 px-6">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {/* Profile Image */}
-          <img
+          {/* <img
             src={profileImg}
             alt="Ramanand Mandal"
             className="w-32 h-32 rounded-full object-cover border-4 border-indigo-500 shadow-lg mb-6"
-          />
+          /> */}
 
           {/* Intro */}
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
