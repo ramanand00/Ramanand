@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import profileImg from "../assets/About.jpg";
 import { FaReact, FaNodeJs, FaGithub, FaLinkedin, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
+import { FaFilePdf } from "react-icons/fa";
 
 // You can use animate.css or Tailwind CSS animation utilities for simple effects
 
@@ -65,6 +66,16 @@ export default function About() {
               >
                 <FaLinkedin size={28} className="hover:scale-125 transition-transform duration-300" />
               </a>
+              <a
+  href="https://drive.google.com/file/d/1Hin5gNeNgdr8dKrC9R5SAy21LdDtDYiI/view"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-sm text-white font-medium shadow-md hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 ease-in-out animate-fade-in glow-on-hover"
+>
+  <FaFilePdf size={16} className="text-white drop-shadow-sm" />
+  View CV
+</a>
+
             </div>
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-3 mt-8 justify-center md:justify-start">
@@ -94,6 +105,17 @@ export default function About() {
               </span>
             </div>
           </div>
+          {/* View CV from Google Drive */}
+{/* <div className="flex justify-center md:justify-start gap-6 mt-6 animate-fade-in">
+  <a
+    href="https://drive.google.com/file/d/1Hin5gNeNgdr8dKrC9R5SAy21LdDtDYiI/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-700 transition duration-300"
+  >
+    View My CV
+  </a>
+</div> */}
         </div>
       </section>
 
@@ -102,6 +124,18 @@ export default function About() {
       {/* Tailwind custom animation styles */}
       <style>
         {`
+        .glow-on-hover:hover {
+      box-shadow: 0 0 10px rgba(138, 43, 226, 0.6), 0 0 20px rgba(138, 43, 226, 0.4);
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out forwards;
+    }
           @keyframes fade-in {
             from { opacity: 0; transform: translateY(30px);}
             to { opacity: 1; transform: translateY(0);}
