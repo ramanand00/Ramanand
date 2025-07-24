@@ -6,9 +6,9 @@ import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills"; // Assuming you have a Skills page
 import Contact from "./Pages/Contact";
 import Certificates from "./Pages/Certificates";
-import BlogDetail from "./pages/BlogDetail";
-import AdminBlogUploader from "./pages/AdminBlogUploader";
-import Blogs from "./pages/Blogs";
+import BlogDetail from "./Pages/BlogDetail";
+import AdminBlogUploader from "./Pages/AdminBlogUploader";
+import Blogs from "./Pages/Blogs";
 
 function App() {
   return (
