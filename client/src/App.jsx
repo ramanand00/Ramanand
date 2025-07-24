@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact";
 import BlogDetail from "./Pages/BlogDetail";
 import AdminBlogUploader from "./Pages/AdminBlogUploader";
 import Blogs from "./Pages/Blogs";
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/admin/upload" element={<AdminBlogUploader />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
     </Router>
   );
