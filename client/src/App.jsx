@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 import BlogDetail from "./Pages/BlogDetail";
 import AdminBlogUploader from "./Pages/AdminBlogUploader";
 import Blogs from "./Pages/Blogs";
-import NotFound from './pages/NotFound';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
