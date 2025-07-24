@@ -6,6 +6,9 @@ import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills"; // Assuming you have a Skills page
 import Contact from "./Pages/Contact";
 import Certificates from "./Pages/Certificates";
+import BlogDetail from "./pages/BlogDetail";
+import AdminBlogUploader from "./pages/AdminBlogUploader";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
+            <Route path="/admin/upload" element={<AdminBlogUploader />} />
           </Routes>
     </Router>
   );

@@ -6,9 +6,11 @@ import { motion, AnimatePresence } from "framer-motion"; // Add framer-motion
 const navItems = [
   { name: "Home",     path: "/" },
   { name: "About",    path: "/about" },
+  { name: "Blogs",    path: "/blogs"},
   { name: "Projects", path: "/projects" },
   { name: "Skills",   path: "/skills" },
   { name: "Contact",  path: "/contact" },
+  { name: "Admin" ,   path: "/admin/upload"},
 ];
 
 export default function Navbar() {
@@ -30,9 +32,9 @@ export default function Navbar() {
               className="text-2xl font-extrabold tracking-tight text-indigo-600 dark:text-indigo-400 flex items-center gap-2"
             >
               <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">
-                Ramanand
+                Knowtica
               </span>
-              <span className="text-gray-800 dark:text-gray-100">.</span>
+              {/* <span className="text-gray-800 dark:text-gray-100">.</span> */}
             </Link>
           </motion.div>
 
