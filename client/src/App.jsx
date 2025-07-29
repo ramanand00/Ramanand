@@ -9,7 +9,7 @@ import Skills from "./Pages/Skills";
 import Contact from "./Pages/Contact";
 import Blogs from "./Pages/Blogs";
 // import Certificates from "./Pages/Certificates";
-import Signup from "./Pages/Signup";
+// import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 //import ForgotPassword from "./pages/ForgotPassword";
 // import ResetPassword from "./pages/ResetPassword";
@@ -40,7 +40,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/signup" element={<Signup />} />
+            {/* <Route path="/signup" element={<Signup />} /> */}
             <Route path="/login" element={<Login />} />
             {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
             {/* <Route path="/reset-password/:token" element={<ResetPassword />} /> */}
