@@ -100,7 +100,7 @@ export default function Navbar() {
                 className="focus:outline-none"
               >
                 <img
-                  src={user?.profileImage || "/default-user.png"}
+                  src={user?.profileImage || "/images/Profile.jpg"}
                   alt="Profile"
                   className="w-10 h-10 rounded-full border-2 border-indigo-500 shadow-sm object-cover"
                 />
