@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import { motion } from "framer-motion";
 
 export default function Blogs() {
@@ -24,7 +24,7 @@ export default function Blogs() {
     return <p className="p-10 text-center text-lg text-gray-500 dark:text-gray-400">Loading blogs...</p>;
 
   if (!blogs.length)
-    return <p className="p-10 text-center text-lg text-gray-500 dark:text-gray-400">Users Have not posted Any Blogs Yet</p>;
+    return <p className="p-10 text-center text-lg text-gray-500 dark:text-gray-400">you Have not posted Any Blogs Yet</p>;
 
   return (
     <>
@@ -36,7 +36,7 @@ export default function Blogs() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          📝 Latest Blog Posts
+          📝 Admin Blog Posts
         </motion.h1>
 
         <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

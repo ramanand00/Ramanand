@@ -13,7 +13,7 @@ export default function BlogDetails() {
 
   useEffect(() => {
     axios
-      .get(`https://ramanand.onrender.com/api/blogs/${id}`)
+      .get(`http://localhost:5000/api/blogs/${id}`)
       .then((res) => {
         setBlog(res.data);
         setLoading(false);
