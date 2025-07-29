@@ -10,7 +10,7 @@ import Contact from "./Pages/Contact";
 import Blogs from "./Pages/Blogs";
 // import Certificates from "./Pages/Certificates";
 import Signup from "./Pages/Signup";
-import Login from "./pages/Login";
+import Login from "./Pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 // import ResetPassword from "./pages/ResetPassword";
 import ProtectedRoute from "./components/ProtectedRoute";
