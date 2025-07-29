@@ -13,6 +13,7 @@ const ProfileCard = () => {
         <img
           src="https://i.pravatar.cc/100?img=32"
           alt="User"
+          loading="lazy"
           className="w-16 h-16 rounded-full border-2 border-blue-500"
         />
         <div>

@@ -72,6 +72,7 @@ export default function BlogDetails() {
               <img
                 src={blog.image}
                 alt={blog.title}
+                loading="lazy"
                 className="w-full max-h-96 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
               />
             </div>

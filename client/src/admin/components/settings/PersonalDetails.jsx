@@ -50,6 +50,7 @@ export default function PersonalDetails() {
         <img
           src={profileImage || user.profileImage || "https://via.placeholder.com/100"}
           alt="Profile"
+          loading="lazy"
           className="w-24 h-24 rounded-full object-cover mr-4 border border-gray-600"
         />
         <input type="file" accept="image/*" onChange={handleImageChange} />

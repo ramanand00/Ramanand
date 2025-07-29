@@ -54,6 +54,7 @@ export default function Blogs() {
                 <img
                   src={blog.image}
                   alt={blog.title}
+                  loading="lazy"
                   className="w-full h-48 object-cover"
                 />
               )}

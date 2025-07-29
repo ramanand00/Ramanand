@@ -11,6 +11,7 @@ const Topbar = () => {
         <img
           src="https://i.pravatar.cc/40"
           alt="Profile"
+          loading="lazy"
           className="w-10 h-10 rounded-full border-2 border-indigo-600"
         />
       </div>

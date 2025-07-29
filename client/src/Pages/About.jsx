@@ -21,6 +21,7 @@ export default function About() {
               <img
                 src={profileImg}
                 alt="Ramanand Mandal"
+                loading="lazy"
                 className="object-cover w-full h-full scale-100 hover:scale-105 transition-transform duration-700"
                 style={{ aspectRatio: "4/3" }}
               />

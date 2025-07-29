@@ -93,6 +93,7 @@ export default function AdminBlogUploader() {
               <img
                 src={formData.image}
                 alt="Blog Visual"
+                loading="lazy"
                 className="w-full max-h-64 object-cover my-4 rounded-lg"
               />
             )}

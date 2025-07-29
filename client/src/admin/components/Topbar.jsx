@@ -46,6 +46,7 @@ const Topbar = () => {
           <img
             src={user?.profileImage || "/default-user.png"}
             alt="User"
+            loading="lazy"
             className="w-10 h-10 rounded-full border-2 border-indigo-600 object-cover"
           />
           <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg hidden group-hover:block z-10">

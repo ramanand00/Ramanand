@@ -102,6 +102,7 @@ export default function Navbar() {
                 <img
                   src={user?.profileImage || "/images/Profile.jpg"}
                   alt="Profile"
+                  loading="lazy"
                   className="w-10 h-10 rounded-full border-2 border-indigo-500 shadow-sm object-cover"
                 />
               </button>
@@ -174,6 +175,7 @@ export default function Navbar() {
                 <img
                   src={user?.profileImage || "/default-user.png"}
                   alt="User"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full border border-indigo-400 object-cover"
                 />
                 <span>{user?.fullName || "Dashboard"}</span>
