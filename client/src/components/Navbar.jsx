@@ -99,12 +99,12 @@ export default function Navbar() {
                 title="Dashboard"
                 className="focus:outline-none"
               >
-                <img
-                  src={user?.profileImage || "/images/Profile.jpg"}
-                  alt="Profile"
-                  loading="lazy"
-                  className="w-10 h-10 rounded-full border-2 border-indigo-500 shadow-sm object-cover"
-                />
+                 <img
+  src="/images/pp.jpg"
+  alt="Ramanand Mandal"
+  loading="lazy"
+  className="w-10 h-10 rounded-full border-2 border-indigo-500 shadow-sm object-cover"
+/>
               </button>
             </motion.li>
           </ul>
@@ -173,11 +173,11 @@ export default function Navbar() {
                 className="flex items-center gap-3 py-2 px-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded w-full text-left focus:outline-none"
               >
                 <img
-                  src={user?.profileImage || "/default-user.png"}
-                  alt="User"
-                  loading="lazy"
-                  className="w-8 h-8 rounded-full border border-indigo-400 object-cover"
-                />
+  src="/images/pp.jpg"
+  alt="Ramanand Mandal"
+  loading="lazy"
+  className="w-10 h-10 rounded-full border-2 border-indigo-500 shadow-sm object-cover"
+/>
                 <span>{user?.fullName || "Dashboard"}</span>
               </button>
             </motion.li>
