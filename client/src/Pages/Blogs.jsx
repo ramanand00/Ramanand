@@ -8,17 +8,15 @@ export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    axios.get("https://ramanand.onrender.com/api/blogs")
-      .then(res => {
-        setBlogs(res.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error(err);
-        setLoading(false);
-      });
-  }, []);
+  // /pages/Blogs.jsx or similar
+useEffect(() => {
+  axios.get('https://ramanand.onrender.com/api/blogs', {
+    withCredentials: true
+  })
+  .then(res => setBlogs(res.data))
+  .catch(err => console.error(err));
+}, []);
+
 
   if (loading)
     return <p className="p-10 text-center text-lg text-gray-500 dark:text-gray-400">Loading blogs...</p>;
