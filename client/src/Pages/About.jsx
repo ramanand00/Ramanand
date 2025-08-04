@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import profileImg from "../assets/About.jpg";
 import { FaReact, FaNodeJs, FaGithub, FaLinkedin, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
@@ -120,7 +120,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
 
       {/* Tailwind custom animation styles */}
       <style>
