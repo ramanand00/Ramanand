@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube, FaHeart } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 
 const Footer = () => {
@@ -29,11 +29,11 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 mt-2">
               {[
-                { icon: <FaGithub />, url: "https://github.com" },
-                { icon: <FaTwitter />, url: "https://twitter.com" },
-                { icon: <FaLinkedin />, url: "https://linkedin.com" },
-                { icon: <FaInstagram />, url: "https://instagram.com" },
-                { icon: <FaYoutube />, url: "https://youtube.com" },
+                { icon: <FaGithub />, url: "https://github.com/ramanand00" },
+                { icon: <FaTwitter />, url: "https://x.com/csit_ramanand" },
+                { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/ramanand-mandal-24a124324/" },
+                { icon: <FaFacebook />, url: "https://www.facebook.com/razzanand.mandal.2025" },
+                // { icon: <FaYoutube />, url: "https://youtube.com" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -77,11 +77,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 border-b dark:from-gray-800 pb-2">Resources</h4>
             <ul className="space-y-3">
               {[
-                { name: "GitHub Repos", url: "https://github.com" },
-                { name: "Code Sandbox", url: "https://codesandbox.io" },
-                { name: "Dev Community", url: "https://dev.to" },
-                { name: "MDN Docs", url: "https://developer.mozilla.org" },
-                { name: "React Docs", url: "https://reactjs.org" },
+                { name: "GitHub Repos", url: "#" },
+                { name: "Code Sandbox", url: "#" },
+                { name: "Dev Community", url: "#" },
+                { name: "MDN Docs", url: "#" },
+                { name: "React Docs", url: "#" },
               ].map((link, index) => (
                 <motion.li key={index} whileHover={{ x: 5 }}>
                   <a 
@@ -124,7 +124,7 @@ const Footer = () => {
             <a href="/privacy" className="dark:from-gray-900 dark:from-gray-500 transition-colors">
               Privacy Policy
             </a>
-            <a href="/terms" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
+            <a href="/terms&conditions" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
               Terms of Service
             </a>
             <a href="/cookies" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
