@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import { FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub, FaMobileAlt } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
 
@@ -68,7 +68,7 @@ export default function Skills() {
         </div>
       </div>
     </section>
-    {/* <Footer/> */}
+    <Footer/>
     </>
   );
 }

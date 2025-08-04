@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import {
   FaPhoneAlt,
   FaEnvelope,
@@ -287,7 +287,7 @@ export default function Contact() {
         </motion.div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
