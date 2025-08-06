@@ -36,14 +36,27 @@ export default function AdminContactPage() {
   }, [searchQuery, contacts]);
 
   const handleDelete = async (id) => {
-    if (!window.confirm("Are you sure you want to delete this submission?")) return;
-    try {
-      await axios.delete(`https://ramanand.onrender.com/api/contact/${id}`);
-      setContacts((prev) => prev.filter((c) => c._id !== id));
-    } catch (err) {
-      alert("Failed to delete.");
-    }
-  };
+  if (!id || id.length !== 24) {
+    console.error("Invalid contact ID:", id);
+    alert("Invalid contact ID.");
+    return;
+  }
+
+  const confirmDelete = window.confirm("Are you sure you want to delete this submission?");
+  if (!confirmDelete) return;
+
+  try {
+    const response = await axios.delete(`https://ramanand.onrender.com/api/contact/${id}`);
+    console.log("Delete success:", response.data);
+
+    setContacts((prev) => prev.filter((c) => c._id !== id));
+    setFilteredContacts((prev) => prev.filter((c) => c._id !== id));
+  } catch (err) {
+    console.error("Delete error:", err?.response?.data || err.message);
+    alert("Failed to delete. Contact may not exist or server error.");
+  }
+};
+
 
   const exportToCSV = () => {
     const csv = [
