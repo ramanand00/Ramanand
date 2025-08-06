@@ -3,12 +3,6 @@ const express = require("express");
 const router = express.Router();
 const Contact = require("../models/Contact");
 
-// ✅ TEST ROUTE
-router.get("/test", (req, res) => {
-  res.send("✅ Contact route is working.");
-});
-
-// ✉️ POST - Add new contact
 router.post("/", async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -26,7 +20,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-// 📥 GET - All contacts
 router.get("/", async (req, res) => {
   try {
     const contacts = await Contact.find().sort({ createdAt: -1 });
@@ -36,18 +29,5 @@ router.get("/", async (req, res) => {
   }
 });
 
-// 🗑️ DELETE - By ID ✅ THIS IS IMPORTANT!
-router.delete("/:id", async (req, res) => {
-  try {
-    const deleted = await Contact.findByIdAndDelete(req.params.id);
-    if (!deleted) {
-      return res.status(404).json({ error: "Contact not found" });
-    }
-    res.status(200).json({ message: "Contact deleted successfully." });
-  } catch (err) {
-    console.error("Delete error:", err);
-    res.status(500).json({ error: "Server error while deleting." });
-  }
-});
 
 module.exports = router;
