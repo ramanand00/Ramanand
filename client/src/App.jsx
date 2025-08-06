@@ -26,6 +26,7 @@ import NotFound from './components/NotFound';
 import Dashboard from "./admin/pages/Dashboard";
 import AdminBlogUploader from "./admin/pages/AdminBlogUploader";
 import AdminBlogs from "./admin/pages/AdminBlogs";
+import AdminPage from "./admin/pages/AdminPage";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="/dashboard" element={<ProtectedRoute> <Dashboard />  </ProtectedRoute>  } />
             <Route path="/new-blogs" element={<AdminBlogUploader />} />
             <Route path="/admin-blogs" element={<AdminBlogs />} />
+            <Route path="/admin-page" element={<AdminPage />} />
           </Routes>
     </Router>
   );

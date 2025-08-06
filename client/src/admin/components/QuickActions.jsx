@@ -4,7 +4,7 @@ const QuickActions = () => {
   const actions = [
     { name: "Upload Blog", path: "/new-blogs" },
     { name: "Blogs", path: "/admin-blogs" },
-    { name: "Users Contacts", path: "/Users-contact" },
+    { name: "Users Contacts", path: "/admin-page" },
     { name: "System Settings", path: "/settings" },
   ];
 
