@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaYoutube, FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaHeart } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 
 const Footer = () => {
@@ -16,10 +17,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
-          <motion.div 
-            whileHover={{ scale: 1.02 }}
-            className="flex flex-col gap-4"
-          >
+          <motion.div whileHover={{ scale: 1.02 }} className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <span role="img" aria-label="logo" className="text-3xl">🌐</span>
               <h3 className="text-2xl font-bold tracking-tight">Ramanand</h3>
@@ -33,7 +31,6 @@ const Footer = () => {
                 { icon: <FaTwitter />, url: "https://x.com/csit_ramanand" },
                 { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/ramanand-mandal-24a124324/" },
                 { icon: <FaFacebook />, url: "https://www.facebook.com/razzanand.mandal.2025" },
-                // { icon: <FaYoutube />, url: "https://youtube.com" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -61,12 +58,12 @@ const Footer = () => {
                 { name: "Contact", url: "/contact" },
               ].map((link, index) => (
                 <motion.li key={index} whileHover={{ x: 5 }}>
-                  <a 
-                    href={link.url} 
+                  <Link
+                    to={link.url}
                     className="text-indigo-200 dark:from-gray-600 transition-colors text-sm flex items-center gap-2"
                   >
                     <span className="text-indigo-400">•</span> {link.name}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
@@ -84,8 +81,8 @@ const Footer = () => {
                 { name: "React Docs", url: "#" },
               ].map((link, index) => (
                 <motion.li key={index} whileHover={{ x: 5 }}>
-                  <a 
-                    href={link.url} 
+                  <a
+                    href={link.url}
                     className="text-indigo-200 dark:from-gray-600 transition-colors text-sm flex items-center gap-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -98,10 +95,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <motion.div
-            whileHover={{ scale: 1.01 }}
-            className="flex flex-col gap-4"
-          >
+          <motion.div whileHover={{ scale: 1.01 }} className="flex flex-col gap-4">
             <h4 className="text-lg font-semibold border-b dark:from-gray-800 pb-2">Get In Touch</h4>
             <p className="text-indigo-200 text-sm">
               Have a project in mind or want to collaborate?
@@ -121,15 +115,15 @@ const Footer = () => {
             Made with <FaHeart className="text-red-400 mx-1" /> by Ramanand
           </div>
           <div className="flex gap-6 text-xs">
-            <a href="/privacy-policy" className="dark:from-gray-900 dark:from-gray-500 transition-colors">
+            <Link to="/privacy-policy" className="dark:from-gray-900 dark:from-gray-500 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/terms&conditions" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
+            </Link>
+            <Link to="/terms&conditions" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
               Terms of Service
-            </a>
-            <a href="/cookie-policy" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
+            </Link>
+            <Link to="/cookie-policy" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
               Cookie Policy
-            </a>
+            </Link>
           </div>
           <div className="text-xs dark:from-gray-900">
             © {currentYear} Knowtica. All rights reserved.
