@@ -108,8 +108,8 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 mt-2 text-sm dark:from-gray-900">
               <HiMail className="text-lg" />
-              <a href="mailto:contact@ramanand.com" className="dark:from-gray-600 transition-colors">
-                contact@ramanand.com
+              <a href="mailto:contact@ramanandmandal.com.np" className="dark:from-gray-600 transition-colors">
+                contact@ramanandmandal.com.np
               </a>
             </div>
           </motion.div>
@@ -121,18 +121,18 @@ const Footer = () => {
             Made with <FaHeart className="text-red-400 mx-1" /> by Ramanand
           </div>
           <div className="flex gap-6 text-xs">
-            <a href="/privacy" className="dark:from-gray-900 dark:from-gray-500 transition-colors">
+            <a href="/privacy-policy" className="dark:from-gray-900 dark:from-gray-500 transition-colors">
               Privacy Policy
             </a>
             <a href="/terms&conditions" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
               Terms of Service
             </a>
-            <a href="/cookies" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
+            <a href="/cookie-policy" className="dark:from-gray-900 dark:from-gray-600 transition-colors">
               Cookie Policy
             </a>
           </div>
           <div className="text-xs dark:from-gray-900">
-            © {currentYear} Ramanand. All rights reserved.
+            © {currentYear} Knowtica. All rights reserved.
           </div>
         </div>
       </div>

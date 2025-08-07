@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const sectionVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -17,49 +19,67 @@ const sectionVariant = {
 const sections = [
   {
     id: "intro",
-    title: "1. Welcome to Our Blogging Platform",
+    title: "1. Introduction",
     content:
-      "By using our blog website, you agree to these terms and conditions. Please read them carefully before publishing or reading any content.",
+      "We are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you use our blogging platform.",
   },
   {
-    id: "ownership",
-    title: "2. Content Ownership",
+    id: "data-collection",
+    title: "2. Data We Collect",
     content:
-      "All blog posts published by users remain their intellectual property. However, by posting on our platform, you grant us the right to display and distribute your content.",
+      "We collect information you provide when creating an account, publishing content, or interacting with others. This may include your name, email, profile information, and any content you post.",
   },
   {
-    id: "responsibilities",
-    title: "3. User Responsibilities",
+    id: "cookies",
+    title: "3. Cookies & Tracking",
     content:
-      "You agree not to post any abusive, illegal, or plagiarized content. Any such violation can result in account suspension or termination.",
+      "We use cookies to enhance your experience, analyze usage, and deliver personalized content. You can control cookies through your browser settings.",
   },
   {
-    id: "comments",
-    title: "4. Comments & Interaction",
+    id: "data-use",
+    title: "4. How We Use Your Data",
     content:
-      "We encourage discussions but expect users to stay respectful. Spam, hate speech, or harassment will not be tolerated.",
+      "Your information helps us operate the platform, improve services, communicate with you, and ensure security. We never sell your personal data to third parties.",
   },
   {
-    id: "termination",
-    title: "5. Account Termination",
+    id: "sharing",
+    title: "5. Data Sharing",
     content:
-      "We reserve the right to disable or delete accounts that violate our terms without prior notice.",
+      "We may share anonymized analytics with partners. Your published content is publicly visible according to your privacy settings. We only disclose personal information when required by law.",
   },
   {
-    id: "updates",
-    title: "6. Updates to Terms",
+    id: "security",
+    title: "6. Data Security",
     content:
-      "These terms may be updated over time. Significant changes will be announced on the blog dashboard.",
+      "We implement industry-standard security measures to protect your information. However, no online platform can guarantee absolute security.",
+  },
+  {
+    id: "rights",
+    title: "7. Your Rights",
+    content:
+      "You can access, update, or delete your personal data through your account settings. You may also request a copy of your data or ask us to stop processing it.",
+  },
+  {
+    id: "children",
+    title: "8. Children's Privacy",
+    content:
+      "Our platform is not intended for users under 13. We do not knowingly collect data from children without parental consent.",
+  },
+  {
+    id: "changes",
+    title: "9. Policy Changes",
+    content:
+      "We may update this policy periodically. Significant changes will be notified through your registered email or platform announcements.",
   },
   {
     id: "contact",
-    title: "7. Contact",
+    title: "10. Contact Us",
     content:
-      "Have questions? Email us at contact@ramanandmandal.com.np We're here to help!",
+      "For privacy concerns or questions, contact our Data Protection Officer at contact@ramanandmandal.com.np.",
   },
 ];
 
-const TermsAndConditions = () => {
+const PrivacyPolicy = () => {
   const [agreed, setAgreed] = useState(false);
   const contentRef = useRef(null);
 
@@ -75,8 +95,12 @@ const TermsAndConditions = () => {
   }, []);
 
   return (
+    <>
+        <Navbar />
+
     <div className="min-h-screen bg-indigo-100 dark:bg-indigo-900 transition-colors duration-500 py-10 px-4">
       {/* Header */}
+      
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -84,10 +108,10 @@ const TermsAndConditions = () => {
         className="max-w-5xl mx-auto text-center"
       >
         <h1 className="text-4xl font-bold text-indigo-700 dark:text-indigo-300 mb-3">
-          Terms & Conditions
+          Privacy Policy
         </h1>
         <p className="text-indigo-600 dark:text-indigo-200 text-lg">
-          Please read these carefully before using our platform.
+          How we collect, use, and protect your personal information
         </p>
       </motion.div>
 
@@ -149,7 +173,7 @@ const TermsAndConditions = () => {
                   : "bg-indigo-300 cursor-not-allowed"
               }`}
             >
-              {agreed ? "I Agree & Continue" : "Scroll to Agree"}
+              {agreed ? "I Acknowledge & Continue" : "Scroll to Acknowledge"}
             </button>
           </div>
         </section>
@@ -159,7 +183,9 @@ const TermsAndConditions = () => {
         Last Updated: July 26, 2025
       </p>
     </div>
+    <Footer />
+    </>
   );
 };
 
-export default TermsAndConditions;
+export default PrivacyPolicy;

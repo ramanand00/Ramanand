@@ -15,6 +15,8 @@ import Login from "./Pages/Login";
 // import ResetPassword from "./pages/ResetPassword";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Terms from "./Pages/Terms";
+import Privacy from "./Pages/Privacy";
+import Cookie from "./Pages/Cookie";
 
 
 //  Importing secondary pages
@@ -46,6 +48,8 @@ function App() {
             {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
             {/* <Route path="/reset-password/:token" element={<ResetPassword />} /> */}
             <Route path="/terms&conditions" element={<Terms />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/cookie-policy" element={<Cookie />} />
 
 
 
